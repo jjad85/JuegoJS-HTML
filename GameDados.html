@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es"> 
+	<head>
+		<title>Lanzar Dados</title>
+		<meta charset="utf-8">
+		<meta name="Lanzar Dados" content="Juego para lanzar dados para 4 jugadores">
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css"/> 
+	</head>
+	<body>
+		<div id="divParametros">
+			<p>Parametros del juego</p>
+			<div id="divCaras">
+				<label for="numCaras">Número de caras dados</label>
+				<input type="range" id="numCaras" value="6" min="6" max="8" step="2" class="rango">
+				<span id="caras">6</span>
+			</div>
+			<div id="divDados">
+				<label for="numDados">Cantidad de dados</label>
+				<input type="range" id="numDados" value="1" min="1" max="3" step="1" class="rango">
+				<span id="dados">1</span>
+			</div>
+			<div id="divWin">
+				<label for="win">¿Quien gana?</label>
+				<select name="ganador" id="formWin" >
+					<option value="1">Mayor Puntaje</option>
+					<option value="0">Menor Puntaje</option>
+				</select>
+			</div>
+			<button  id="btnParametros">Configurar Juego</button>
+		</div>
+		<div id="divJugadores" style="visibility: hidden;">
+			<p>Jugadores</p>
+			<div id="divJugador1">
+				<label for="nomJugador1">Nombre del jugador 1:</label>
+				<input type="text" id="nomJugador1" value="Juan">
+				<p id="txtP1Lanza1"></p>
+				<p id="txtP1Lanza2"></p>
+				<p id="txtP1Lanza3"></p>
+				<p id="txtP1Lanzat"></p>
+			</div>
+			<div id="divJugador2">
+				<label for="nomJugador2">Nombre del jugador 2:</label>
+				<input type="text" id="nomJugador2" value="Jose">
+				<p id="txtP2Lanza1"></p>
+				<p id="txtP2Lanza2"></p>
+				<p id="txtP2Lanza3"></p>
+				<p id="txtP2Lanzat"></p>
+			</div>
+			<div id="divJugador3">
+				<label for="nomJugador3">Nombre del jugador 3:</label>
+				<input type="text" id="nomJugador3" value="Samuel">
+				<p id="txtP3Lanza1"></p>
+				<p id="txtP3Lanza2"></p>
+				<p id="txtP3Lanza3"></p>
+				<p id="txtP3Lanzat"></p>
+			</div>
+			<div id="divJugador4">
+				<label for="nomJugador4">Nombre del jugador 4:</label>
+				<input type="text" id="nomJugador4" value="Flaca">
+				<p id="txtP4Lanza1"></p>
+				<p id="txtP4Lanza2"></p>
+				<p id="txtP4Lanza3"></p>
+				<p id="txtP4Lanzat"></p>
+			</div>
+			<button  id="btnJuego">Lanzar</button>
+			<p id="txtGanador"></p>
+		</div>
+	</body>
+	<script src="js/game.js"></script>
+</html>
